@@ -316,11 +316,11 @@ fn get_next_liquidity(
     }
 }
 
-struct SwapStepQuote {
-    amount_in: u64,
-    amount_out: u64,
-    next_sqrt_price: u128,
-    fee_amount: u64,
+pub struct SwapStepQuote {
+    pub amount_in: u64,
+    pub amount_out: u64,
+    pub next_sqrt_price: u128,
+    pub fee_amount: u64,
 }
 
 pub fn compute_swap_step(
